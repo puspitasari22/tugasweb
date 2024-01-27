@@ -1,0 +1,124 @@
+<html>
+<style>
+    body {
+       background-image: url("wlpp.jpg");
+       background-position: center;
+       background-size: cover;
+   }
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+
+<div class="w3-container">
+    <img src="benner.jpg" style="width: 100%;">
+</div>
+
+<!-- BAGIAN TOMBOL -->
+<div class="w3-bar w3-black w3-card-4">
+    <button class="w3-bar-item w3-button" onclick="openKota('PROFILE')">PROFILE</button>
+	<button class="w3-bar-item w3-button" onclick="openKota('PROFILE TOKO')">PROFILE TOKO</button>
+    <button class="w3-bar-item w3-button" onclick="openKota('toko')">TOKO</button>
+	<button class="w3-bar-item w3-button" onclick="openKota('alumunium')">ALUMUNIUM</button>
+
+        <div class="w3-dropdown-hover">
+            <button class="w3-button">MORE</button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <button class="w3-bar-item w3-button" onclick="openKota('pintu jendela')">PINTU ALUMUNIUM</button>
+                <button class="w3-bar-item w3-button" onclick="openKota('jendela')">JENDELA</button>
+                <button class="w3-bar-item w3-button" onclick="openKota('pintu jendela')">PINTU JENDELA</button>
+            </div>
+        </div>
+    </div>
+
+<!-- BAGIAN ISI -->
+    <div id="PROFILE" class="w3-container kota w3-animate-zoom w3-card-4 w3-light-gray" style="display:none; opacity: 70%;">
+        <center>
+            <!-- JUDUL ISI 1 -->
+            <h1 ><b>PROFILE</h1>
+                <!-- NAMA FILE ISI 1 -->
+        <img src="adel.jpg" style="width: 25%;">
+        </center>
+        <!-- ISI FILE 1 -->
+        <p><center> Nama : Delia Aksani Puspitasari  
+		<p><center> Nim : 10123156
+		<p><center> dari Kelas : IF - 4 
+	</div>
+
+	<div id="PROFILE TOKO" class="w3-container kota w3-animate-zoom w3-card-4 w3-light-gray" style="display:none; opacity: 70%;">
+        <center>
+            <!-- JUDUL ISI 2 -->
+            <h1 ><b>PROFILE TOKO</h1>
+                <!-- NAMA FILE ISI 2 -->
+        <img src="profile.jpg" style="width: 25%;">
+        </center>
+        <!-- ISI FILE 2 -->
+        <p><center> MENERIMA PESANAN DAN RENOVASI RUMAH : - KUSEN ALUMUNIUM - PINTU ALUMUNIUM - JENDELA ALUMUNIUM - KACA TAMPERE - TERIMA PASANG ATAP BAJARINGAN - PINTU PAT PITING - DLL CALL CENTER : 081322080179 
+	</div>
+
+	<div id="toko" class="w3-container kota w3-animate-zoom w3-card-4 w3-light-gray" style="display:none; opacity: 70%;">
+        <center>
+            <!-- JUDUL ISI 3 -->
+            <h1 ><b>Toko</h1>
+                <!-- NAMA FILE ISI 3 -->
+        <img src="toko.jpg" style="width: 25%;">
+        </center>
+        <!-- ISI FILE 3 -->
+        <p><center>Ini Tokonya yang berlokasi di Jl. Soekarno Hatta, Ciseureuh, Kec. Regol, Kota Bandung, Jawa Barat 40243</center>
+    </div>
+
+    <div id="alumunium" class="w3-container kota w3-animate-zoom w3-card-4 w3-light-gray" style="display:none; opacity: 70%;">
+        <center>
+            <!-- JUDUL ISI 4 -->
+            <h1 ><b>ALUMUNIUM</h1>
+                <!-- NAMA FILE ISI 4 -->
+        <img src="alumunium.jpg" style="width: 25%;">
+        </center>
+        <!-- ISI FILE 4 -->
+        <p><center>Ini Contoh Alumunium</center>
+    </div>
+
+    <div id="pintu alumunium" class="w3-container kota w3-animate-zoom w3-card-4 w3-light-gray" style="display:none; opacity: 70%;">
+        <center>
+            <!-- JUDUL ISI 5 -->
+            <h1 ><b>Pintu Alumunium</h1>
+                <!-- NAMA FILE ISI 5 -->
+        <img src="pintu alumunium.jpg" style="width: 25%;">
+        </center>
+        <!-- ISI FILE 5 -->
+        <p><center>Ini Contoh Pintu Alumunium</center>
+    </div>
+
+    <div id="jendela" class="w3-container kota w3-animate-zoom w3-card-4 w3-light-gray" style="display:none; opacity: 70%;">
+        <center>
+            <!-- JUDUL ISI 6 -->
+            <h1 ><b>Jendela</h1>
+                <!-- NAMA FILE ISI 6 -->
+        <img src="jendela.jpg" style="width: 25%;">
+        </center>
+        <!-- ISI FILE 6 -->
+        <p><center>Ini Contoh Jendela alumunium</center>
+    </div>
+
+    <div id="pintu jendela" class="w3-container kota w3-animate-zoom w3-card-4 w3-light-gray" style="display:none; opacity: 70%;">
+        <center>
+            <!-- JUDUL ISI 7 -->
+            <h1 ><b>Pintu Jendela</h1>
+                <!-- NAMA FILE ISI 7 -->
+        <img src="pintu jendela.jpg" style="width: 25%;">
+        </center>
+        <!-- ISI FILE 7 -->
+        <p><center>Ini Contoh Pintu Jendela alumunium</center>
+    </div>
+
+<script>
+    function openKota(namakota) {
+    var i;
+    var x = document.getElementsByClassName("kota");
+    for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+    }
+    document.getElementById(namakota).style.display = "block";
+    }
+    </script>
+</html>
